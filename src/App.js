@@ -1,17 +1,17 @@
 // import React from "react";
 import { Fragment } from 'react/cjs/react.production.min';
 
-import Profile from './Components/Profile/Profile';
-import user from './Components/Profile/user.json';
+import Profile from './components/Profile/Profile';
+import user from './components/Profile/user.json';
 
-import Statistics from './Components/Statistics/Statistics';
-import data from './Components/Statistics/data.json';
+import Statistics from './components/Statistics/Statistics';
+import data from './components/Statistics/data.json';
 
-import FriendList from './Components/FriendList/FriendList';
-import friends from './Components/FriendList/friends.json';
+import FriendList from './components/FriendList/FriendList';
+import friends from './components/FriendList/friends.json';
 
-import Transactions from './Components/Transactions/Transactions';
-import transactions from './Components/Transactions/transactions.json';
+import Transactions from './components/Transactions/Transactions';
+import transactions from './components/Transactions/transactions.json';
 
 function App() {
   return (

@@ -1,8 +1,21 @@
 import PropTypes from 'prop-types';
 import { Status } from './FriendList.styled';
 
-function FriendListItem({ friends }) {
-  return friends.map(friend => (
+// function FriendListItem({ friends }) {
+//   return friends.map(friend => (
+//     <li key={friend.id}>
+//       <Status
+//         className={'status ' + friend.isOnline.toString()}
+//         status={friend.isOnline ? 'online' : 'offline'}
+//       ></Status>
+//       <img src={friend.avatar} alt="User avatar" width="48" />
+//       <p>{friend.name}</p>
+//     </li>
+//   ));
+// }
+
+function FriendListItem({ friend }) {
+  return (
     <li key={friend.id}>
       <Status
         className={'status ' + friend.isOnline.toString()}
@@ -11,7 +24,7 @@ function FriendListItem({ friends }) {
       <img src={friend.avatar} alt="User avatar" width="48" />
       <p>{friend.name}</p>
     </li>
-  ));
+  );
 }
 
 FriendListItem.propTypes = {
